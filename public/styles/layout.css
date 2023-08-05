@@ -21,32 +21,16 @@ body {
   font-size: 24px;
 }
 
-nav {
+main {
   display: flex;
-  align-items: end;
-  color:#FFFFFF;
-  background-color: #4056A1;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-bottom: 1.5em;
-  height: 120px; 
-  box-sizing: border-box;
+  background-color: #f4f1ec;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 5%;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
- #logo {
-  font-family: "Bungee", sans-serif;
-  font-size: 24px;
- }
-
- .write-tweet-nav {
-  margin-left: auto;
- }
-
- #write-tweet-icon {
-  display: flex;
-  justify-content: center;
- }
