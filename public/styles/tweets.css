@@ -1,0 +1,27 @@
+.tweets {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebe4da;
+  width: 80%;
+}
+
+.tweet {
+  border: solid;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.tweet:hover {
+  box-shadow: 6px 1.5px 1.5px lightgray;
+}
+
+article.tweet header {
+  display: flex;
+  background-image: none;
+  background-color: #ebe4da;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0px 0px;
+  margin-top: 0px;
+  height: 100%;
+}
