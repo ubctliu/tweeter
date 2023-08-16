@@ -1,7 +1,7 @@
 const MAX_TWEET_LENGTH = 140;
 
 $(document).ready(() => {
-  $("#tweet-text").on('keydown' , (event) => {
+  $("#tweet-text").on('input' , (event) => {
     const textareaText = $(event.target).val();
     let currentCharCount = textareaText.length;
     let counter = Number($(".counter").val());
