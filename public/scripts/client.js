@@ -36,12 +36,14 @@ const renderTweets = (tweets) => {
 };
 
 $(document).ready(() => {
+  $('.error-message').css('display', 'none');
   $.get("/tweets")
     .done(tweets => {
       renderTweets(tweets);
     });
   $(".new-tweet").on("submit", (event) => {
     event.preventDefault();
+    $('.error-message').slideUp("slow");
     const $formData = $(event.target).serialize();
     const $formDataLength = 140 - $(event.target).find(".counter").text();
     if ($formDataLength <= 140) {
@@ -54,10 +56,10 @@ $(document).ready(() => {
             });
         });
       } else {
-        alert("Tweet cannot be empty!");
+        $(".error-message").slideDown("slow").text("Tweet cannot be empty!");
       }
     } else {
-      alert("Tweet cannot exceed 140 characters!");
+      $(".error-message").slideDown("slow").text("Tweet cannot exceed 140 characters!");
     }
   });
 });
