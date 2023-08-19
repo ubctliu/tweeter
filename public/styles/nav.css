@@ -2,7 +2,8 @@ nav {
   display: flex;
   align-items: flex-end;
   color:#FFFFFF;
-  background-color: #4056A1;
+  background-color: #006b8c;
+  background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png");
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-bottom: 1.5em;
@@ -26,4 +27,37 @@ nav {
  #write-tweet-icon {
   display: flex;
   justify-content: center;
+ }
+
+ @media screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: flex-end;
+    color:#FFFFFF;
+    background-color: #4056A1;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
+    height: 120px; 
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+  }
+  
+  #logo {
+    font-family: "Bungee", sans-serif;
+    font-size: 1.5rem;
+   }
+  
+   .write-tweet-nav {
+    margin-left: auto;
+    align-items: center;
+   }
+  
+   #write-tweet-icon {
+    display: flex;
+    justify-content: center;
+   }  
  }

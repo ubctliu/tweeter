@@ -79,3 +79,20 @@ article.tweet p.tweet-content {
   font-weight: bold;
   padding: 20px 0px 20px 35px;
 }
+
+@media screen and (min-width: 1024px) {
+  .tweet {
+    border: solid;
+    margin: 0px 0px 25px 0px;
+    flex: 1;
+  }
+
+  article.tweet header .user-handle {
+    display: flex;
+    padding: 0px 0px 0px 27em;
+    font-size: 36px;
+    color: silver;
+    opacity: .6;
+  }
+  
+}

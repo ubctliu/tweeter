@@ -16,3 +16,11 @@ header {
   color: white;
   margin-top: -60px;
 }
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 2em;
+    margin: 7em 1em 2em 1em;
+    width: 25%;
+  }
+}
