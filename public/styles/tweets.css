@@ -5,11 +5,6 @@
   width: 80%;
 }
 
-p.error-message {
-  border: 3.5px solid red;
-  padding: 20px 20px 20px 20px;
-}
-
 .tweet {
   border: solid;
   margin: 0px 0px 25px 0px;
@@ -26,28 +21,19 @@ article.tweet header {
   background-color: #ebe4da;
   justify-content: flex-start;
   align-items: center;
-  padding: 0px 0px 0px 0px;
-  margin-top: 0px;
-  height: 100%;
-}
-
-article.tweet header {
-  display: flex;
-  flex-direction: row;
-  background-image: none;
-  background-color: #ebe4da;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0px 0px 0px 35px;
+  position: relative;
   margin-top: 0px;
   gap: 15px;
   height: 100%;
+  padding: 0px 0px 0px 35px;
 }
 
 article.tweet header .user-handle {
   display: flex;
-  padding: 0px 0px 0px 27em;
-  font-size: 36px;
+  position: absolute;
+  top: 25px;
+  right: 1em;
+  font-size: 30px;
   color: silver;
   opacity: .6;
 }
@@ -80,19 +66,30 @@ article.tweet p.tweet-content {
   padding: 20px 0px 20px 35px;
 }
 
+p.error-message {
+  border: 3.5px solid red;
+  padding: 20px 20px 20px 20px;
+}
+
 @media screen and (min-width: 1024px) {
   .tweet {
-    border: solid;
-    margin: 0px 0px 25px 0px;
     flex: 1;
   }
 
+  article.tweet p.tweet-content {
+    padding: 0px 0px 20px 35px;
+  }
+
   article.tweet header .user-handle {
-    display: flex;
-    padding: 0px 0px 0px 27em;
     font-size: 36px;
-    color: silver;
-    opacity: .6;
+    left: 24em;
   }
   
+  article.tweet header {
+    height: 35%;
+  }
+
+  article.tweet footer {
+    margin: 15px;
+  }
 }
