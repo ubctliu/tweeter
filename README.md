@@ -4,8 +4,8 @@ Tweeter is a simple, single-page Twitter clone made with jQuery, HTML5, and CSS3
 
 ## Screenshots
 !["Screenshot of desktop front-page"](./screenshots/desktop-frontpage.png)
-!["Screenshot of mobile front-page"](./screenshots/mobile-frontpage.png)
 !["Screenshot of empty error message"](./screenshots/errormsg-empty.png)
+!["Screenshot of mobile front-page"](./screenshots/mobile-frontpage.png)
 !["Screenshot of msg too long error message"](./screenshots/errormsg-exceeds.png)
 
 
